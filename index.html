@@ -1,30 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Geronimo Alarcon Garcia</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Geronimo Alarcon Garcia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1>Gerito</h1>
             <p>Desarrollador de Software</p>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>Acerca de mí</h2>
-            <p>Insertar breve Descripción.</p>
+            <h2 class="text-center">Acerca de mí</h2>
+            <p class="text-center">Insertar breve Descripción.</p>
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="py-5 bg-light">
         <div class="container">
-            <h2>Experiencia</h2>
-            <div class="experience-item">
+            <h2 class="text-center">Experiencia</h2>
+            <div class="experience-item mb-4">
                 <h3>Desarrollador Web en Empresa</h3>
                 <p>2023 - 2024</p>
                 <ul>
@@ -33,14 +61,13 @@
                     <li>Responsabilidad 3</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2>Habilidades</h2>
-            <ul>
+            <h2 class="text-center">Habilidades</h2>
+            <ul class="list-unstyled text-center">
                 <li>Insertar las habilidades xd</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -52,27 +79,38 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Insertar los Proyectos Individuales</h2>
-            <div class="project-item">
-                <h3>Nombre del Proyecto 1</h3>
-                <p>Descripción breve del proyecto...</p>
-                <p><a href="#">Ver proyecto</a></p>
+            <h2 class="text-center">Proyectos Individuales</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Nombre del Proyecto 1</h3>
+                            <p class="card-text">Descripción breve del proyecto...</p>
+                            <a href="#" class="btn btn-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Nombre del Proyecto 2</h3>
+                            <p class="card-text">Descripción breve del proyecto...</p>
+                            <a href="#" class="btn btn-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-item">
-                <h3>Nombre del Proyecto 2</h3>
-                <p>Descripción breve del proyecto...</p>
-                <p><a href="#">Ver proyecto</a></p>
-            </div>
-     
         </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 Gerito. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
