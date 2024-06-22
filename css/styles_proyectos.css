@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.project-section {
+    padding-top: 80px; /* Ajuste para espacio del navbar */
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-info {
+    font-size: 18px;
+    color: #666;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.btn-primary {
+    background-color: #777;
+    border-color: #777;
+}
+
+.btn-primary:hover {
+    background-color: #777;
+    border-color: #777;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
