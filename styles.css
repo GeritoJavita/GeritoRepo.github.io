@@ -10,20 +10,79 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
     padding: 20px;
 }
 
-h1 {
-    color: #333;
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
     font-size: 36px;
 }
 
-h3 {
-    color: #555;
+header p {
     font-size: 24px;
 }
 
-p {
-    font-size: 18px;
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background-color: #ddd;
+    color: #333;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 24px;
+}
+
+.project-item p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
