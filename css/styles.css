@@ -86,3 +86,7 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.carousel-item{
+    max-height:480px;
+}
