@@ -162,4 +162,18 @@
     .header-img:hover {
         transform: scale(1.1);
     }
-    
+/* Estilos mejorados para los títulos h2 */
+h2.fade-in {
+  color: #333;
+  padding: 35px;
+  font-size: 35px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+/* Texto Acerca de mi */
+
+p.fade-in{
+    text-align: justify;
+    font-size: 20px;
+}
