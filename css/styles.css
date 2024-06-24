@@ -84,7 +84,9 @@ footer {
     background-color: #141618;
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
-
+.navbar-brand{
+    padding-left: 10px;
+}
 .navbar-nav .nav-link {
     font-size: 18px;
     padding: 10px 20px;
@@ -155,6 +157,7 @@ h2.fade-in {
     text-align: center;
     font-family: Georgia, serif;
 }
+/**/
 
 /* Text Styles */
 p.fade-in {
