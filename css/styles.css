@@ -1,148 +1,155 @@
+/* General Styles */
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
 
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-        
-    }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    header h1 {
-        font-size: 36px;
-        
-    }
+header {
+    background: linear-gradient(135deg, #eb7a7a, #565fd3);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
 
-    header p {
-        font-size: 24px;
-        
-    }
+/* Header Styles */
+header h1 {
+    font-size: 36px;
+}
 
-    .section {
-        padding: 80px 0;
-        background-color: #333;
-    }
-   .experience-item{
-    
-    }
-    .card {
-        border: none;
-        background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-    
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    
+header p {
+    font-size: 24px;
+}
 
+/* Section Styles */
+.section {
+    padding: 80px 0;
+    background-color: #333;
+}
 
- 
-    .experience-item {
-        margin-bottom: 20px;
-    }
+/* Experience Item Styles */
+.experience-item {
+    margin-bottom: 20px;
+}
 
-    .experience-item h3 {
-        font-size: 24px;
-    }
+.experience-item h3 {
+    font-size: 24px;
+}
 
-    body {
-        font-family: Georgia, serif;
-        line-height: 1.6;
-        background-color: white;
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        background-color: #333; 
-        background: linear-gradient(135deg, #eb7a7a, #565fd3); color: #333;
-       
-        color: #fff;
-        text-align: center;
-        padding: 80px 0;
-    }
+/* Card Styles */
+.card {
+    border: none;
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-    h1.fade-in
-    
-    {
-       padding-right: 100px
-       ;
-        font-size: 100px;
-     }
-     #header_sub
-     {
-        padding-left: 100px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-    }
-    footer {
-        background: linear-gradient(135deg, #eb7a7a, #565fd3); color: #333;
-        
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #eb7a7a, #565fd3);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
+/* Carousel Styles */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
 
-    .carousel-item img {
-        height: 500px;
-        object-fit: cover;
-    }
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
 
-    .carousel-caption {
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 5px;
-    }
+/* Navbar Styles */
+.navbar {
+    background-color: #141618;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
 
-    .navbar {
-       background-color:#141618 ; 
-        transition: background-color 0.3s ease, padding 0.3s ease;
-    }
-    
-    .navbar-nav .nav-link {
-        font-size: 18px;
-        padding: 10px 20px;
-        transition: color 0.3s ease;
-    }
-    
-    .navbar-nav .nav-link:hover {
-        color: #777; 
-    }
-    .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-in.active {
-        opacity: 1;
-        transform: translateY(0);
-    }   
-     .header-img {
-        padding: 0;
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #777;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header-specific Styles */
+h1.fade-in {
+    padding-right: 100px;
+    font-size: 100px;
+}
+
+#header_sub {
+    padding-left: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .header-img {
         max-width: 200px;
         border-radius: 50%;
         transition: transform 0.2s ease;
     }
-    
-    .header-img:hover {
-        transform: scale(1.1);
+
+    .container {
+        flex-direction: column;
     }
-/* Estilos mejorados para los títulos h2 */
-h2.fade-in {
-  color: #333;
-  padding: 35px;
-  font-size: 35px;
-  text-align: center;
-  font-family: Georgia, serif;
+
+    .me-lg-5 {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 
-/* Texto Acerca de mi */
+.header-img:hover {
+    transform: scale(1.1);
+}
 
-p.fade-in{
+/* Enhanced Styles for h2 */
+h2.fade-in {
+    color: #333;
+    padding: 35px;
+    font-size: 35px;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+/* Text Styles */
+p.fade-in {
     text-align: justify;
     font-size: 20px;
 }
