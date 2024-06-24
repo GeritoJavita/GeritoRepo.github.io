@@ -120,7 +120,7 @@ h1.fade-in {
 /* Responsive Styles */
 @media (max-width: 767.98px) {
     .header-img {
-        max-width: 200px;
+        max-width: 300px;
         border-radius: 50%;
         transition: transform 0.2s ease;
     }
@@ -133,6 +133,14 @@ h1.fade-in {
         margin-bottom: 20px;
         margin-right: 0;
     }
+    h1.fade-in{
+        padding: 0px;
+        font-size: 60px;
+    }
+    #header_sub{
+        padding: 0px;
+    }
+
 }
 
 .header-img:hover {
