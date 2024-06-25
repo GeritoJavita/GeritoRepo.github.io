@@ -5,7 +5,6 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
-    
 }
 
 .container {
@@ -16,22 +15,37 @@ body {
 
 header {
     background: linear-gradient(135deg, #eb7a7a, #565fd3);
-    color: rgb(14, 13, 13);
+    color: #0e0d0d;
     text-align: center;
-    
     padding: 80px 0;
 }
 
 /* Header Styles */
 header h1 {
-    
-    font-size: 36px;
+    font-size: 48px;
     font-family: "Garamond", serif;
-   
+    color: #141618;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 header p {
     font-size: 24px;
+    color: #141618;
+    margin: 0;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+/* Decorative underline for header */
+header h1::after {
+ 
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+    margin: 20px auto 0;
 }
 
 /* Section Styles */
@@ -40,42 +54,42 @@ header p {
     background-color: #333;
 }
 
-/* Experience Item Styles */
-.experience-item {
-    margin-bottom: 20px;
-    
-}
-
-.experience-item h3 {
-    font-size: 24px;
-}
-
-/* Card Styles */
-.card {
+/* Skills Section Styles */
+#skills .card {
     border: none;
     background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-.card:hover {
+#skills .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+#skills .btn {
+    margin-top: 10px;
+}
+
+#skills .collapse {
+    transition: height 0.3s ease;
+}
+
 /* Footer Styles */
 footer {
-    background: linear-gradient(0deg, var(--color-homepage-light), var(--color-homepage-dark)); color: #fff;
+    background: linear-gradient(0deg, var(--color-homepage-light), var(--color-homepage-dark));
+    color: #fff;
     text-align: center;
     padding: 20px 0;
     font-family: "Helvetica", sans-serif;
-    font-size: 18px ;
+    font-size: 18px;
 }
-footer p{
+
+footer p {
     color: grey;
 }
+
 /* Carousel Styles */
 .carousel-item img {
     height: 500px;
@@ -93,9 +107,11 @@ footer p{
     background-color: #141618;
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding-left: 10px;
 }
+
 .navbar-nav .nav-link {
     font-size: 18px;
     padding: 10px 20px;
@@ -144,14 +160,15 @@ h1.fade-in {
         margin-bottom: 20px;
         margin-right: 0;
     }
-    h1.fade-in{
+
+    h1.fade-in {
         padding: 0px;
         font-size: 60px;
     }
-    #header_sub{
+
+    #header_sub {
         padding: 0px;
     }
-
 }
 
 .header-img:hover {
@@ -167,7 +184,6 @@ h2.fade-in {
     text-align: center;
     font-family: "Garamond", serif;
 }
-/**/
 
 /* Text Styles */
 p.fade-in {
