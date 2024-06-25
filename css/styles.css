@@ -1,10 +1,11 @@
 /* General Styles */
 body {
-    font-family: Georgia, serif;
+    font-family: "Helvetica", sans-serif;
     line-height: 1.6;
     background-color: white;
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -15,14 +16,18 @@ body {
 
 header {
     background: linear-gradient(135deg, #eb7a7a, #565fd3);
-    color: #fff;
+    color: rgb(14, 13, 13);
     text-align: center;
+    
     padding: 80px 0;
 }
 
 /* Header Styles */
 header h1 {
+    
     font-size: 36px;
+    font-family: "Garamond", serif;
+   
 }
 
 header p {
@@ -38,6 +43,7 @@ header p {
 /* Experience Item Styles */
 .experience-item {
     margin-bottom: 20px;
+    
 }
 
 .experience-item h3 {
@@ -61,12 +67,15 @@ header p {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #eb7a7a, #565fd3);
-    color: #fff;
+    background: linear-gradient(0deg, var(--color-homepage-light), var(--color-homepage-dark)); color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 18px ;
 }
-
+footer p{
+    color: grey;
+}
 /* Carousel Styles */
 .carousel-item img {
     height: 500px;
@@ -151,11 +160,12 @@ h1.fade-in {
 
 /* Enhanced Styles for h2 */
 h2.fade-in {
+    font-weight: bold;
     color: #333;
     padding: 35px;
     font-size: 35px;
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: "Garamond", serif;
 }
 /**/
 
