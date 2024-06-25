@@ -2,10 +2,13 @@
 body {
     font-family: "Helvetica", sans-serif;
     line-height: 1.6;
-    background-color: #c5c5c5; /* Color de fondo suave */
+    background-color: #ffffff; /* Color de fondo suave */
     color: #8f8c8c; /* Color de fuente principal */
     margin: 0;
     padding: 0;
+}
+.container-footer{
+    padding: 20px;
 }
 
 .container {
@@ -91,7 +94,7 @@ footer {
     background-color: #333; /* Fondo oscuro para el pie de página */
     color: #fff; /* Texto blanco para el pie de página */
     text-align: center;
-    padding: 20px 0;
+    padding: 18px 0;
     font-size: 18px;
 }
 
