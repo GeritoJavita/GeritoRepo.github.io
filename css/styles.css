@@ -9,9 +9,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    position: relative;
+    max-width: 80%; /* Ajusta el ancho máximo para evitar solapamientos */
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 80px; /* Ajusta según el tamaño de las imágenes para evitar que se superpongan con el contenido */
+    padding-bottom: 80px; /* Ajusta según el tamaño de las imágenes para evitar que se superpongan con el contenido */
+    text-align: center; /* Centra el contenido horizontalmente */
 }
 
 /* Estilos del Encabezado */
@@ -28,8 +31,17 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 0;
     padding-bottom: 10px;
+    animation: shine 1.5s; /* Animación de brillo */
 }
-
+@keyframes shine {
+    0% {
+        opacity: 0; /* Comienza sin brillo */
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 0.5; /* Añade brillo a la mitad */
+    }
+}
 header p {
     font-size: 24px;
     margin: 0;
@@ -142,6 +154,23 @@ h1.fade-in {
     padding-left: 100px;
 }
 
+.img-left, .img-right {
+    position: absolute;
+    width: 350px; /* Ajusta el tamaño según sea necesario */
+    height: 350px;
+    animation: moveUpDown 4s infinite alternate; /* Añade la animación */
+}
+
+.img-left {
+    top: 0;
+    left: 0;
+}
+
+.img-right {
+    bottom: 0;
+    right: 0;
+}
+
 /* Estilos Responsivos */
 @media (max-width: 767.98px) {
     .header-img {
@@ -149,7 +178,12 @@ h1.fade-in {
         border-radius: 50%;
         transition: transform 0.2s ease;
     }
-
+    .img-left, .img-right {
+        position: absolute;
+        width: 100px; /* Ajusta el tamaño según sea necesario */
+        height: 100px;
+        animation: moveUpDown 4s infinite alternate; /* Añade la animación */
+    }
     .container {
         flex-direction: column;
     }
@@ -167,6 +201,8 @@ h1.fade-in {
     #header_sub {
         padding: 0px;
     }
+    
+ 
 }
 
 .header-img:hover {
@@ -187,4 +223,26 @@ h2.fade-in {
 p.fade-in {
     text-align: justify;
     font-size: 20px;
+}
+
+/* Estilos de la Sección de Experiencia */
+#experience {
+    position: relative;
+    padding: 40px 0; /* Añade espacio en la parte superior e inferior */
+}
+
+#experience ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el relleno izquierdo por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Animación de Imágenes */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
 }
