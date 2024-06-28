@@ -310,3 +310,7 @@ p.fade-in {
         height: 4.4rem; /* Vuelve al tamaño inicial */
     }
 }
+.carousel-inner img {
+    object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+}
