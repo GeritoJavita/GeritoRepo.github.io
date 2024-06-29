@@ -17,6 +17,10 @@ body {
     padding-left: 20px;
     
 }
+.navbar-nav .nav-link:hover {
+    color: #777;
+}
+
 h2.fade-in {
     font-weight: bold;
     color: #8d8989;
@@ -29,10 +33,6 @@ h2.fade-in {
     color: rgba(255, 255, 255, 0.7); /* blanco con transparencia */
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-    color: #fff;
-}
 
 .carousel-inner img {
     object-fit: cover;
@@ -44,7 +44,18 @@ h2.fade-in {
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+#crud .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+#crud .btn {
+    margin-top: 10px;
+}
+
+#crud .collapse {
+    transition: height 0.3s ease;
+}
 .fade-in.active {
     opacity: 1;
     transform: translateY(0);
@@ -86,7 +97,7 @@ h2.fade-in {
 /* Asegura que las imágenes dentro de las tarjetas tengan el mismo tamaño */
 .card-img-top {
     width: 100%;
-    height: 300px; /* Ajusta la altura según tus necesidades */
+    height: 320px; /* Ajusta la altura según tus necesidades */
     object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
 }
 
@@ -108,23 +119,23 @@ h2.fade-in {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-links a {
+.social-links  {
     color: #fff;
     font-size: 24px;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
-.social-links a:hover {
+.social-links :hover {
     color: #ccc; /* gris claro al pasar el cursor */
 }
 
 .card-title {
-    color: #555;
+    color: #3a3a3a;
 }
 
 .card-text {
-    color: #777;
+    color: #525252;
 }
 
 .card {
@@ -132,7 +143,7 @@ h2.fade-in {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, max-height 0.3s ease;
     overflow: hidden;
-    max-height: 400px; /* altura cerrada */
+    max-height: 800px; /* altura cerrada */
 }
 
 .card.expanded {
@@ -147,6 +158,6 @@ h2.fade-in {
 }
 
 .btn-outline-secondary:hover {
-    color: #555;
-    border-color: #555;
+    color: #ffffff;
+    border-color: #6b6b6b;
 }
