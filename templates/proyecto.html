@@ -13,20 +13,29 @@
 <body class="d-flex flex-column min-vh-100">
 
     <!-- Navegador de los templates -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <img src="img_templates/about_img.jpeg" alt="Imagen de perfil" class="img-fluid rounded-circle header-img fade-in" style="max-width: 60px;">
-            <a class="navbar-brand" href="#carouselExample" >Proyecto Alquiler Vacacional</a>
+            <a class="navbar-brand"  >Proyecto Alquiler Vacacional</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/GeritoRepo.github.io/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/GeritoRepo.github.io/">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#GitHub">Git Hub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Admin">Panel Administrador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#User">Panel Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Sql">SQL</a>
                     </li>
                 </ul>
             </div>
@@ -92,15 +101,15 @@
     </section>
 <!-- Sección CRUD -->
 <section id="crud" class="crud-section py-5 bg-light">
-    <div class="container">
+    <div class="container" id="Admin">
         <h2 class="text-center mb-2 fade-in">Vista Administrador - CRUD</h2>
         <div class="row row-cols-1 row-cols-md-2 g-2 fade-in">
             <div class="col">
                 <div class="card h-100">
                     <img src="img_templates/vista-admin.png" class="card-img-top" alt="CRUD Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Vista Panel Administrador</h5>
+                        <p class="card-text">La vista del administrador ademas de las gestiones de propiedaes, reserva y usuarios, tambien maneja un boton de Backup, donde guarda en tiempo real los datos.</p>
                     </div>
                 </div>
             </div>
@@ -108,8 +117,8 @@
                 <div class="card h-100">
                     <img src="img_templates/usuarios.png" class="card-img-top" alt="CRUD Image 2">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Registro de Usuarios</h5>
-                        <p class="card-text">Pantalla de registro de usuarios con validaciones completas.</p>
+                        <h5 class="card-title">CRUD - Gestion Usuarios</h5>
+                        <p class="card-text">El panel administrativo permite ver todos los usuarios registrados en la base de datos, como tambien podra eliminarlos y editar los atirbutos que estos tengan.</p>
                     </div>
                 </div>
             </div>
@@ -117,8 +126,8 @@
                 <div class="card h-100">
                     <img src="img_templates/editar-usuario.png" class="card-img-top" alt="CRUD Image 3">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Gestión de Productos</h5>
-                        <p class="card-text">Interfaz para la gestión completa de productos en el sistema.</p>
+                        <h5 class="card-title">CRUD - Editar Usuario</h5>
+                        <p class="card-text">El administrador podra editar los datos personales de un usuario registrado, no importa si es de personal o cliente</p>
                     </div>
                 </div>
             </div>
@@ -126,8 +135,8 @@
                 <div class="card h-100">
                     <img src="img_templates/gestion-reserva.png" class="card-img-top" alt="CRUD Image 4">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Gestion Reserva</h5>
+                        <p class="card-text">El panel del administrador tiene todo el acceso a la informacion de las reservas hechas por usuarios, como tambien podra ver reservas anteriores y sus calificaciones en la caja de comentarios.</p>
                     </div>
                 </div>
             </div>
@@ -135,8 +144,8 @@
                 <div class="card h-100">
                     <img src="img_templates/reserva-editar.png" class="card-img-top" alt="CRUD Image 5">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Editar Reservas</h5>
+                        <p class="card-text">El administrador podra editar las reservas en tiempo real, todo esto cuando llegue por peticion de un usuario, o cuando se cancela el servicio por incumplimiento de pago.</p>
                     </div>
                 </div>
             </div>
@@ -144,8 +153,8 @@
                 <div class="card h-100">
                     <img src="img_templates/gestion-propiedades.png" class="card-img-top" alt="CRUD Image 6">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Gestion Propiedad</h5>
+                        <p class="card-text">El panel del administrador tiene acceso a todos los datos registrados de las propiedades, asi como toda su informacion especifa, el podra eliminar, editar y añadir a la base de datos.</p>
                     </div>
                 </div>
             </div>
@@ -153,8 +162,8 @@
                 <div class="card h-100">
                     <img src="img_templates/editar-propiedad.png" class="card-img-top" alt="CRUD Image 7">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Editar Propiedad</h5>
+                        <p class="card-text">El administrador podra editar una propiedad en caso de que esta no este en stock, tenga algun mantenimiento o cambie el formato en el que se vende.</p>
                     </div>
                 </div>
             </div>
@@ -162,8 +171,8 @@
                 <div class="card h-100">
                     <img src="img_templates/añadir-propiedad.png" class="card-img-top" alt="CRUD Image 8">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">CRUD - Añadir Propiedad</h5>
+                        <p class="card-text">El administrador podra añadir una nueva propiedad con todas las caracteristicas especificas.</p>
                     </div>
                 </div>
             </div>
@@ -172,15 +181,15 @@
 </section>
 <!-- Sección CRUD -->
 <section id="crud" class="crud-section py-5 bg-light">
-    <div class="container">
+    <div class="container" id="User">
         <h2 class="text-center mb-2 fade-in">Vista Cliente - Usuario</h2>
         <div class="row row-cols-1 row-cols-md-2 g-2 fade-in">
             <div class="col">
                 <div class="card h-100">
                     <img src="img_templates/vista-usuario.png" class="card-img-top" alt="CRUD Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">Vista - Cliente</h5>
+                        <p class="card-text">Al iniciar Sesión, el cliente podra ver todos los destinos disponibles que brinda la empresa como tambien informacion de la empresa </p>
                     </div>
                 </div>
             </div>
@@ -188,8 +197,8 @@
                 <div class="card h-100">
                     <img src="img_templates/reserva-usuario.png" class="card-img-top" alt="CRUD Image 2">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Registro de Usuarios</h5>
-                        <p class="card-text">Pantalla de registro de usuarios con validaciones completas.</p>
+                        <h5 class="card-title">USER - Reservar del Usuario</h5>
+                        <p class="card-text">El usuario - cliente podra reservar una vez haya iniciado sesión</p>
                     </div>
                 </div>
             </div>
@@ -197,8 +206,8 @@
                 <div class="card h-100">
                     <img src="img_templates/pasarela.png" class="card-img-top" alt="CRUD Image 3">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Gestión de Productos</h5>
-                        <p class="card-text">Interfaz para la gestión completa de productos en el sistema.</p>
+                        <h5 class="card-title">USER - Pasarela de Pagos</h5>
+                        <p class="card-text">La pasarela de usuarios, permite al usuario elegir el metodo de pago y si desea pagarlo a cuotas...</p>
                     </div>
                 </div>
             </div>
@@ -206,8 +215,9 @@
                 <div class="card h-100">
                     <img src="img_templates/usuario-reserva.png" class="card-img-top" alt="CRUD Image 4">
                     <div class="card-body">
-                        <h5 class="card-title">CRUD - Administración de Ventas</h5>
-                        <p class="card-text">Panel para la administración de las ventas realizadas por los usuarios.</p>
+                        <h5 class="card-title">USER - perfil</h5>
+                        <p class="card-text">En el perfil del usuario - cliente, podra ver la informacion de si mismo como tambien las reservas que ha hecho. Cabe destacar que al momento de hacer una reserva cuotas este le saldra un boton que permite pagar lo faltante como tambien al final una reserva se le habilitara una caja de comentarios para puntuar dicha reserva... <p>
+                   
                     </div>
                 </div>
             </div>
@@ -216,7 +226,7 @@
     </div>
 </section>
     <!-- Sección SQL --><section id="sql" class="sql-section py-5 bg-light">
-    <div class="container">
+    <div class="container" id="Sql">
         <h2 class="text-center mb-4 fade-in">Base de Datos SQL</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4 fade-in">
             <div class="col">
