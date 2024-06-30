@@ -33,7 +33,12 @@ h2.fade-in {
     color: rgba(255, 255, 255, 0.7); /* blanco con transparencia */
 }
 
-
+header {
+    background-color: white; /* Fondo blanco para el encabezado */
+    color: #333; /* Texto oscuro para el encabezado */
+    text-align: center;
+    padding: 80px 0;
+}
 .carousel-inner img {
     object-fit: cover;
     height: 500px; /* ajusta la altura del carrusel */
@@ -208,7 +213,7 @@ h2.fade-in {
    
 }
 .show{
-    z-index: 0;
+    z-index: 10;
 }
 
 .show .go-top-button {
