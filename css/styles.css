@@ -204,7 +204,10 @@ h1.fade-in {
     #header_sub {
         padding: 0px;
     }
-    
+    .carousel-inner img {
+        object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+        max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+    }
  
 }
 
@@ -309,8 +312,4 @@ p.fade-in {
         width: 4.4rem; /* Vuelve al tamaño inicial */
         height: 4.4rem; /* Vuelve al tamaño inicial */
     }
-}
-.carousel-inner img {
-    object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
-    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
 }
