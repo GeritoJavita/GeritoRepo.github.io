@@ -161,3 +161,19 @@ h2.fade-in {
     color: #ffffff;
     border-color: #6b6b6b;
 }
+@media (max-width: 767.98px){
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #495057;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        text-align: right;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+  
+}
