@@ -208,7 +208,22 @@ h1.fade-in {
         object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
         max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
     }
- 
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #495057;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        text-align: right;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+  
+      
+   
 }
 
 .header-img:hover {
