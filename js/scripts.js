@@ -28,3 +28,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Llama a la función revealOnScroll() cuando se carga la página
     revealOnScroll();
 });
+    
